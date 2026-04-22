@@ -16,12 +16,23 @@ st.set_page_config(
 
 
 # Load data
-df = pd.read_csv("../data_real/final_risk_data.csv")
-df_original = df.copy()
+# df = pd.read_csv("../data_real/final_risk_data.csv")
+
 
 
 
 # df = pd.read_csv("data_real/final_risk_data.csv")
+
+file_path = "data_real/final_risk_data.csv"
+if os.path.exists(file_path):
+    df = pd.read_csv(file_path)
+else:
+    df = pd.DataFrame({
+        "Country": ["India", "USA"],
+        "Risk": [50, 30]
+    })
+
+    df_original = df.copy()
 
 df["Temperature"] = df["Temperature"].fillna(df["Temperature"].mean())
 df["Rainfall"] = df["Rainfall"].fillna(df["Rainfall"].mean())
