@@ -32,7 +32,7 @@ else:
         "Risk": [50, 30]
     })
 
-    df_original = df.copy()
+    # df_original = df.copy()
 
 df["Temperature"] = df["Temperature"].fillna(df["Temperature"].mean())
 df["Rainfall"] = df["Rainfall"].fillna(df["Rainfall"].mean())
@@ -151,6 +151,7 @@ Reason:
 """)
 
 # Get top row
+df_original = df.copy()
 top_row = df_original.sort_values(by="Risk_Score", ascending=False).iloc[0]
 
 # Extract values
