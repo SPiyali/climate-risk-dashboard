@@ -1,0 +1,1 @@
+# df = df[(df["Rainfall"] > 0) & (df["Temperature"] > 0) & (df["Population"] > 0)]
