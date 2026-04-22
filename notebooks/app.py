@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import time
+import os
 
 
 st.set_page_config(
@@ -17,6 +18,8 @@ st.set_page_config(
 # Load data
 df = pd.read_csv("../data_real/final_risk_data.csv")
 df_original = df.copy()
+
+
 
 # df = pd.read_csv("data_real/final_risk_data.csv")
 
