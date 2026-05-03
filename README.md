@@ -35,3 +35,38 @@ It provides insights based on temperature, rainfall, and population trends using
 ---
 
 ## 📂 Project Structure
+├── app.py
+├── data/
+├── notebooks/
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/SPiyali/climate-risk-dashboard.git
+cd climate-risk-dashboard
+pip install -r requirements.txt
+streamlit run app.py
+
+
+🧠 Learnings
+Hands-on experience with data analysis & visualization
+Building interactive dashboards using Streamlit
+Using Plotly for dynamic charts
+Understanding climate risk indicators
+🔮 Future Improvements
+Add machine learning-based prediction
+More datasets integration
+User authentication system
+👩‍💻 Author
+
+Piyali Mondal
+📧 piyaliworld6@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/piyali-mondal-38a584279/
+
+💻 GitHub: https://github.com/SPiyali
